@@ -1,0 +1,1620 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Markdown学习笔记, Kenn Won&#39;s blog">
+    <meta name="description" content="Markdown学习笔记Hello,欢迎您来到我的第一篇博客文章,这是我的第一篇博客,记录的是我学习markdown过程中的笔记和练习.此文章借鉴CSDN博主witnessai1所写,目的仅是练习Markdown语法,在此向witnessa">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Markdown学习笔记 | Kenn Won&#39;s blog</title>
+    <link rel="icon" type="image/png" href="/Daffofily.github.io/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/Daffofily.github.io/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/Daffofily.github.io/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/Daffofily.github.io/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/Daffofily.github.io/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/Daffofily.github.io/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/Daffofily.github.io/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/Daffofily.github.io/css/my.css">
+<link rel="stylesheet" type="text/css" href="/Daffofily.github.io/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/Daffofily.github.io/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/Daffofily.github.io/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/Daffofily.github.io/css/reward.css">
+    
+
+
+
+    <script src="/Daffofily.github.io/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/Daffofily.github.io/" class="waves-effect waves-light">
+                    
+                    <img src="/Daffofily.github.io/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Kenn Won&#39;s blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Daffofily.github.io/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Daffofily.github.io/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Daffofily.github.io/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Daffofily.github.io/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Daffofily.github.io/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Daffofily.github.io/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/Daffofily.github.io/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Kenn Won&#39;s blog</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Daffofily.github.io/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Daffofily.github.io/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Daffofily.github.io/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Daffofily.github.io/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Daffofily.github.io/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Daffofily.github.io/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/Daffofily.github.io/medias/featureimages/11.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Markdown学习笔记</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/Daffofily.github.io/tags/markdown%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">markdown笔记</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/Daffofily.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                语言学习
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-10-10
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/Daffofily.github.io/libs/prism/prism.min.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="Markdown学习笔记"><a href="#Markdown学习笔记" class="headerlink" title="Markdown学习笔记"></a>Markdown学习笔记</h1><p>Hello,欢迎您来到我的第一篇博客文章,这是我的第一篇博客,记录的是我学习markdown过程中的笔记和练习.此文章借鉴CSDN博主<a target="_blank" rel="noopener" href="https://blog.csdn.net/witnessai1">witnessai1</a>所写,目的仅是练习Markdown语法,在此向witnessai1博主致谢.此博客尚未完结,剩余部分我随着自己的学习进度会继续补充.因笔者仅为初学,故此博客仅供交流借鉴,其中不乏谬误,还望各位读者指正!!!</p>
+<p>[toc]</p>
+<h2 id="xxxxxxxxxx-hexo-new-“My-New-Post”bash"><a href="#xxxxxxxxxx-hexo-new-“My-New-Post”bash" class="headerlink" title="xxxxxxxxxx $ hexo new “My New Post”bash"></a>xxxxxxxxxx $ hexo new “My New Post”bash</h2><p>代码: </p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token italic"><span class="token punctuation">*</span><span class="token content">斜体</span><span class="token punctuation">*</span></span>
+<span class="token bold"><span class="token punctuation">**</span><span class="token content">粗体</span><span class="token punctuation">**</span></span>
+<span class="token bold"><span class="token punctuation">**</span><span class="token content"><span class="token italic"><span class="token punctuation">*</span><span class="token content">加粗斜体</span><span class="token punctuation">*</span></span></span><span class="token punctuation">**</span></span>
+<span class="token strike"><span class="token punctuation">~~</span><span class="token content">删除线</span><span class="token punctuation">~~</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>显示效果：<br><em>斜体</em><br><strong>粗体</strong><br><em><strong>加粗斜体</strong></em><br><del>删除线</del></p>
+<h2 id="2-分级标题"><a href="#2-分级标题" class="headerlink" title="2. 分级标题"></a>2. 分级标题</h2><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> 一级标题</span>
+<span class="token title important"><span class="token punctuation">##</span> 二级标题</span>
+<span class="token title important"><span class="token punctuation">###</span> 三级标题</span>
+......<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>各级标题字号依次递减<br>显示效果：</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h2 id="3-超链接"><a href="#3-超链接" class="headerlink" title="3. 超链接"></a>3. 超链接</h2><h3 id="3-1-行列式"><a href="#3-1-行列式" class="headerlink" title="3.1. 行列式"></a>3.1. 行列式</h3><p>语法说明：[]里面写链接文字，()里面写链接地址，””里面可写可不写，写上鼠标指向链接文字时会有悬浮文字<br>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">欢迎来到[Daffodily]的网站(https://daffodily.github.io/Daffofily.github.io/)
+欢迎来到[Daffodily]的网站(https://daffodily.github.io/Daffofily.github.io/ "我的github地址")<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>显示效果：<br>欢迎来到<a target="_blank" rel="noopener" href="https://daffodily.github.io/Daffofily.github.io/">Daffodily</a>的个人网站<br>欢迎来到<a target="_blank" rel="noopener" href="https://daffodily.github.io/Daffofily.github.io/%E7%9A%84%E7%BD%91%E7%AB%99" title="我的github地址">Daffodily</a>的个人网站<br><strong>!!注意此处()必须紧跟在[]后面!!</strong></p>
+<h3 id="3-2-参考式"><a href="#3-2-参考式" class="headerlink" title="3.2. 参考式"></a>3.2. 参考式</h3><p>参考式链接一般在存在多次引用的情况下使用，实际上减少了代码量<br>语法说明：<br>参考式链接有两个部分，一个是在文中，一个是在文末（当然也可以是其他地方）。文中的部分格式是[链接文字][链接符号]，文末的部分格式是：链接符号: 链接地址 “链接标题”<br>代码：</p>
+<pre class="line-numbers language-none"><code class="language-none">本人学校的官网是[武汉大学][1]
+我的个人github地址是[Daffodily][2]
+
+[1]: https:&#x2F;&#x2F;www.whu.edu.cn&#x2F; &quot;转到珞珈山职业技术学院&quot;
+[2]: https:&#x2F;&#x2F;daffodily.github.io&#x2F;Daffofily.github.io&#x2F; &quot;转到我的github&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>显示效果：<br>本人学校的官网是<a target="_blank" rel="noopener" href="https://www.whu.edu.cn/" title="转到珞珈山职业技术学院">武汉大学</a><br>我的个人github地址是<a target="_blank" rel="noopener" href="https://daffodily.github.io/Daffofily.github.io/" title="转到我的github">Daffodily</a></p>
+<h3 id="3-3-自动连接"><a href="#3-3-自动连接" class="headerlink" title="3.3. 自动连接"></a>3.3. 自动连接</h3><p>语法说明: Markdown支持自动将网址和电子邮箱地址转换为连接,只需要将其用&lt;&gt;包起来<br>代码:</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">&lt;https://www.csdn.net>
+&lt;2832762297@qq.com><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>显示效果:<br><a target="_blank" rel="noopener" href="https://www.csdn.net/">https://www.csdn.net</a><br><a href="mailto:&#50;&#x38;&#51;&#x32;&#55;&#x36;&#x32;&#x32;&#x39;&#55;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#x6d;">&#50;&#x38;&#51;&#x32;&#55;&#x36;&#x32;&#x32;&#x39;&#55;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<h2 id="4-锚点"><a href="#4-锚点" class="headerlink" title="4. 锚点"></a>4. 锚点</h2><p>锚点其实是页内超链接，可以跳转到本页面的某个位置。</p>
+<p>语法：<br>在需要跳转的地方后面写上(#标记)，在需要跳转到的地方后面写上</p>
+<p>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">##</span> 目录&#123;#index&#125;</span>
+
+跳转到目录(#目录)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>显示效果：</p>
+<p>跳转到<a href="#index">目录</a></p>
+<h2 id="5-列表"><a href="#5-列表" class="headerlink" title="5. 列表"></a>5. 列表</h2><h3 id="5-1-无序列表"><a href="#5-1-无序列表" class="headerlink" title="5.1. 无序列表"></a>5.1. 无序列表</h3><p>使用*，+，- 表示无序列表<br>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">-</span> 无序列表一
+<span class="token list punctuation">-</span> 无序列表二
+
+<span class="token list punctuation">+</span> 无序列表一
+<span class="token list punctuation">+</span> 无序列表二
+
+<span class="token list punctuation">*</span> 无序列表一
+<span class="token list punctuation">*</span> 无序列表二<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>显示效果：</p>
+<ul>
+<li>无序列表一</li>
+<li>无序列表二</li>
+</ul>
+<ul>
+<li>无序列表一</li>
+<li>无序列表二</li>
+</ul>
+<ul>
+<li>无序列表一</li>
+<li>无序列表二</li>
+</ul>
+<h3 id="5-2-有序列表"><a href="#5-2-有序列表" class="headerlink" title="5.2. 有序列表"></a>5.2. 有序列表</h3><p>有序列表用数字加一个小数点表示<br>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">1.</span> 有序列表
+<span class="token list punctuation">2.</span> 有序列表
+<span class="token list punctuation">3.</span> 有序列表<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>显示效果：</p>
+<ol>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>有序列表</li>
+</ol>
+<h3 id="5-3-定义型列表"><a href="#5-3-定义型列表" class="headerlink" title="5.3. 定义型列表"></a>5.3. 定义型列表</h3><p>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">Markdown
+    轻量级文本标记语言，可以转换成html，pdf等格式（四个不可见的空格）
+代码块 2
+	这是代码块的定义（左侧有一个制表符）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>显示效果：<br>Markdown<br>    轻量级文本标记语言，可以转换成html，pdf等格式（左侧有一个可见的冒号和四个不可见的空格）<br>代码块<br>    这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格）</p>
+<h3 id="5-4-列表缩进"><a href="#5-4-列表缩进" class="headerlink" title="5.4. 列表缩进"></a>5.4. 列表缩进</h3><p>在列表标记后跟上至少一个空格或者制表符</p>
+<p>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">*</span>  轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。
+那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。 
+软泥上的青荇， 油油的在水底招摇； 在康河的柔波里， 我甘心做一条水草！ 
+
+<span class="token list punctuation">*</span>  那榆荫下的一潭， 不是清泉， 是天上虹； 揉碎在浮藻间， 沉淀着彩虹似的梦。
+寻梦？撑一支长篙， 向青草更青处漫溯； 满载一船星辉， 在星辉斑斓里放歌。 
+但我不能放歌， 悄悄是别离的笙箫； 夏虫也为我沉默， 沉默是今晚的康桥！ 
+悄悄的我走了， 正如我悄悄的来； 我挥一挥衣袖， 不带走一片云彩。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li><p>轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。<br>那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。<br>软泥上的青荇， 油油的在水底招摇； 在康河的柔波里， 我甘心做一条水草！ </p>
+</li>
+<li><p>那榆荫下的一潭， 不是清泉， 是天上虹； 揉碎在浮藻间， 沉淀着彩虹似的梦。<br>寻梦？撑一支长篙， 向青草更青处漫溯； 满载一船星辉， 在星辉斑斓里放歌。<br>但我不能放歌， 悄悄是别离的笙箫； 夏虫也为我沉默， 沉默是今晚的康桥！<br>悄悄的我走了， 正如我悄悄的来； 我挥一挥衣袖， 不带走一片云彩。</p>
+</li>
+</ul>
+<h3 id="5-5-包含段落的列表"><a href="#5-5-包含段落的列表" class="headerlink" title="5.5. 包含段落的列表"></a>5.5. 包含段落的列表</h3><p>每个列表项目可以包含多个段落，每个项目下的段落应该缩进至少两个空格空格或是一个制表符<br>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">*</span> 轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。
+那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。 
+软泥上的青荇， 油油的在水底招摇； 在康河的柔波里， 我甘心做一条水草！
+  那榆荫下的一潭， 不是清泉， 是天上虹； 揉碎在浮藻间， 沉淀着彩虹似的梦。 
+寻梦？撑一支长篙， 向青草更青处漫溯； 满载一船星辉， 在星辉斑斓里放歌。 
+但我不能放歌， 悄悄是别离的笙箫； 夏虫也为我沉默， 沉默是今晚的康桥！ 
+<span class="token list punctuation">*</span> 悄悄的我走了， 正如我悄悄的来； 我挥一挥衣袖， 不带走一片云彩。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>显示效果：</p>
+<ul>
+<li>轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。</li>
+</ul>
+<p>那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。<br>软泥上的青荇， 油油的在水底招摇； 在康河的柔波里， 我甘心做一条水草！</p>
+<p>  那榆荫下的一潭， 不是清泉， 是天上虹； 揉碎在浮藻间， 沉淀着彩虹似的梦。<br>寻梦？撑一支长篙， 向青草更青处漫溯； 满载一船星辉， 在星辉斑斓里放歌。<br>但我不能放歌， 悄悄是别离的笙箫； 夏虫也为我沉默， 沉默是今晚的康桥！ </p>
+<ul>
+<li>悄悄的我走了， 正如我悄悄的来； 我挥一挥衣袖， 不带走一片云彩。</li>
+</ul>
+<h2 id="6-引用"><a href="#6-引用" class="headerlink" title="6. 引用"></a>6. 引用</h2><p>在引用的文字前加上&gt;即可，可以支持多重引用<br>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token blockquote punctuation">> ></span> 无意义的引用1
+
+<span class="token blockquote punctuation">></span> 无意义的引用2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>显示效果：</p>
+<blockquote>
+<blockquote>
+<p>无意义的引用1</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>无意义的引用2</p>
+</blockquote>
+<h2 id="7-插入图像"><a href="#7-插入图像" class="headerlink" title="7. 插入图像"></a>7. 插入图像</h2><h3 id="7-1-行内式"><a href="#7-1-行内式" class="headerlink" title="7.1. 行内式"></a>7.1. 行内式</h3><pre class="line-numbers language-none"><code class="language-none">语法格式：![图片Alt](图片地址 &quot;图片Title&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>语法说明：图片Alt的意思是如果图片不能显示，就用Alt来代替图片，Title同样是悬浮文字</p>
+<p>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">我的主题：
+<span class="token url"><span class="token operator">!</span>[<span class="token content">我的主题</span>](<span class="token url">./images/0.jpg</span> <span class="token string">"我的主题"</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>我的主题：<br><img src="/Daffofily.github.io/2022/10/10/Markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/0.jpg" alt="我的主题"></p>
+<h3 id="7-2-参考式"><a href="#7-2-参考式" class="headerlink" title="7.2. 参考式"></a>7.2. 参考式</h3><p>语法说明：</p>
+<p>在要插入的地方写![图片Alt][标记]</p>
+<p>在文档后面写上[标记]: 图片地址 “Title”</p>
+<p>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">我的主题
+<span class="token url"><span class="token operator">!</span>[<span class="token content">我的主题</span>][<span class="token variable">1</span>]</span>
+
+<span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span> ../images/1.jpg</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>显示效果：<br>我的主题<br><img src="/Daffofily.github.io/2022/10/10/Markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/1.jpg" alt="我的主题"></p>
+<h2 id="8-内容目录"><a href="#8-内容目录" class="headerlink" title="8.内容目录"></a>8.内容目录</h2><p>在段落中写[TOC]可以显示目录，会自动将多级标题提取出来，并且分级，详细可以参见本文目录</p>
+<h2 id="9-注脚"><a href="#9-注脚" class="headerlink" title="9.注脚"></a>9.注脚</h2><p>语法说明：</p>
+<p>在需要注脚文字后面写上[^注脚名称]，然后在文本后面添加注脚。</p>
+<p>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">使用 Markdown[^1]可以效率的书写文档
+
+[^1]:Markdown是一种纯文本标记语言<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>使用 Markdown<a href="Markdown%E6%98%AF%E4%B8%80%E7%A7%8D%E7%BA%AF%E6%96%87%E6%9C%AC%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80">^1</a>可以效率的书写文档</p>
+<h2 id="10-流程图"><a href="#10-流程图" class="headerlink" title="10.流程图"></a>10.流程图</h2><p>本文主要介绍Mermaid流程图<br>示例：</p>
+<pre class="line-numbers language-mermaid" data-language="mermaid"><code class="language-mermaid"><span class="token keyword">graph</span> TB
+	A<span class="token text string">[Apple]</span><span class="token arrow operator">--></span>B<span class="token text string">&#123;Boy&#125;</span>
+	A<span class="token arrow operator">---</span>C<span class="token text string">(Cat)</span>
+	B.<span class="token arrow operator">-></span>E<span class="token text string">((Dog))</span>
+	C<span class="token inter-arrow-label"><span class="token arrow-head arrow operator">==</span><span class="token label property">喵</span><span class="token arrow operator">==></span></span>E
+	<span class="token keyword">style</span> A <span class="token style"><span class="token property">fill</span><span class="token operator">:</span>#2ff<span class="token punctuation">,</span><span class="token property">fill-opacity</span><span class="token operator">:</span>0.1<span class="token punctuation">,</span><span class="token property">stroke</span><span class="token operator">:</span>#faa<span class="token punctuation">,</span><span class="token property">stroke-width</span><span class="token operator">:</span>4px</span>
+	<span class="token keyword">style</span> E <span class="token style"><span class="token property">stroke</span><span class="token operator">:</span>#000<span class="token punctuation">,</span><span class="token property">stroke-width</span><span class="token operator">:</span>8px</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="语法结构"><a href="#语法结构" class="headerlink" title="语法结构"></a>语法结构</h3><pre class="line-numbers language-none"><code class="language-none">graph 方向
+节点定义以及节点连线
+(样式调整)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><strong>注意此处必须具有完整的格式（至少前两行要写）</strong></p>
+<h3 id="显示方向"><a href="#显示方向" class="headerlink" title="显示方向"></a>显示方向</h3><ul>
+<li>TB&#x2F;TD 表示从上到下</li>
+<li>BT 表示从下到上</li>
+<li>RL 表示从右到左</li>
+<li>LR 表示从左到右</li>
+</ul>
+<h3 id="节点类型"><a href="#节点类型" class="headerlink" title="节点类型"></a>节点类型</h3><ul>
+<li>默认节点： A</li>
+<li>矩形节点： B[矩形]</li>
+<li>圆角矩形节点： C(圆角矩形)</li>
+<li>圆形节点： D((圆形))</li>
+<li>非对称节点： E&gt;非对称]</li>
+<li>菱形节点： F{菱形}</li>
+</ul>
+<p>节点连线</p>
+<ul>
+<li>箭头连接 A1–&gt;B1</li>
+<li>开放连接 A2—B2</li>
+<li>虚线箭头连接 A3.-&gt;B3 或者 A3-.-&gt;B3</li>
+<li>虚线连接 A4.-B4 或者 A4-.-B4</li>
+<li>粗线箭头连接 A5&#x3D;&#x3D;&gt;B5</li>
+<li>粗线开放连接 A6&#x3D;&#x3D;&#x3D;B6</li>
+<li>标虚线箭头连接 A7-.text.-&gt;B7 </li>
+<li>标签开放连接 A8–text—B8<pre class="line-numbers language-mermaid" data-language="mermaid"><code class="language-mermaid"><span class="token keyword">graph</span> TB
+A1<span class="token arrow operator">--></span>B1
+A2<span class="token arrow operator">---</span>B2
+A3.<span class="token arrow operator">-></span>B3 
+A4.-B4 
+A5<span class="token arrow operator">==></span>B5
+A6<span class="token arrow operator">===</span>B6
+A7<span class="token inter-arrow-label"><span class="token arrow-head arrow operator">-.</span><span class="token label property">text</span><span class="token arrow operator">.-></span></span>B7
+A8<span class="token inter-arrow-label"><span class="token arrow-head arrow operator">--</span><span class="token label property">text</span><span class="token arrow operator">---</span></span>B8<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<h2 id="11-表格"><a href="#11-表格" class="headerlink" title="11.表格"></a>11.表格</h2><p>语法说明：</p>
+<ol>
+<li>表格书写格式由三个部分组成，第一行为表头部分，第二行为分隔部分，第三行为主体部分</li>
+<li>列与列之间用 | 分隔</li>
+<li>分隔部分最后可以加上：指定对齐方式，默认为左对齐，加上为右对齐</li>
+</ol>
+<p>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">姓名|年龄|专业方向
+-|-|-
+宋嘉|20|地理信息工程
+于昊|20|摄影测量
+冯阳|21|空间信息与数字技术
+王困|20|地理信息工程<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>显示效果：</p>
+<table>
+<thead>
+<tr>
+<th align="left">姓名</th>
+<th>年龄</th>
+<th align="left">专业方向</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">宋嘉</td>
+<td>20</td>
+<td align="left">地理信息工程</td>
+</tr>
+<tr>
+<td align="left">于昊</td>
+<td>20</td>
+<td align="left">摄影测量</td>
+</tr>
+<tr>
+<td align="left">冯阳</td>
+<td>21</td>
+<td align="left">空间信息与数字技术</td>
+</tr>
+<tr>
+<td align="left">王困</td>
+<td>20</td>
+<td align="left">地理信息工程</td>
+</tr>
+</tbody></table>
+<h2 id="12-分割线"><a href="#12-分割线" class="headerlink" title="12.分割线"></a>12.分割线</h2><p>可以用三个以上的 * 、+ 、- 建立一个分割线<br>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token hr punctuation">---</span>
++++
+<span class="token hr punctuation">***</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>显示效果：</p>
+<hr>
+<hr>
+<p>+++</p>
+<h2 id="13-代码"><a href="#13-代码" class="headerlink" title="13.代码"></a>13.代码</h2><h3 id="13-1-行内式"><a href="#13-1-行内式" class="headerlink" title="13.1. 行内式"></a>13.1. 行内式</h3><p>行内式一般用于插入一个单词或者一句代码的情况<br>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">C语言里的<span class="token code-snippet code keyword">`scanf()`</span>函数怎么使用？<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>显示效果：</p>
+<p>C语言里的<code>scanf()</code>函数怎么使用？</p>
+<h3 id="13-2-缩进式多行代码"><a href="#13-2-缩进式多行代码" class="headerlink" title="13.2. 缩进式多行代码"></a>13.2. 缩进式多行代码</h3><p>缩进式一般用四个空格或者是一个制表符</p>
+<p>代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span>include&lt;iostream></span>
+using namespace std;
+void main()&#123;
+
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>显示效果：<br>    #include<iostream><br>    using namespace std;<br>    void main(){<br>    }</iostream></p>
+<h3 id="13-3-用六个包裹多行代码"><a href="#13-3-用六个包裹多行代码" class="headerlink" title="13.3. 用六个包裹多行代码"></a>13.3. 用六个包裹多行代码</h3><p>用六个 &#96; 将代码部分包括起来<br>示例：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">from torch import nn <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/Daffofily.github.io/about" rel="external nofollow noreferrer">Kenn Won</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://youtsite.com/Daffofily.github.io/2022/10/10/Markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">https://youtsite.com/Daffofily.github.io/2022/10/10/Markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/Daffofily.github.io/about" target="_blank">Kenn Won</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/Daffofily.github.io/tags/markdown%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">markdown笔记</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/Daffofily.github.io/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/Daffofily.github.io/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/Daffofily.github.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/Daffofily.github.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/Daffofily.github.io/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/Daffofily.github.io/libs/valine/av-min.js"></script>
+<script src="/Daffofily.github.io/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: '5R0y1TcoxlWT9uyb5fXZBSuU-gzGzoHsz',
+        appKey: 'Lq1pssKz9KbXqVwler0Q8Wvo',
+        serverURLs: '',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'en',
+        placeholder: 'just go go'
+    });
+</script>
+
+<!--酷Q推送-->
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/Daffofily.github.io/2023/07/19/titanic_prediction/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/Daffofily.github.io/medias/featureimages/17.jpg" class="responsive-img" alt="titanic prediction">
+                        
+                        <span class="card-title">titanic prediction</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-19
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/Daffofily.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    机器学习
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/Daffofily.github.io/tags/Kaggle/">
+                        <span class="chip bg-color">Kaggle</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/Daffofily.github.io/2022/10/10/%E5%85%B3%E4%BA%8Epytorch%E4%B8%ADDataLoader%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/Daffofily.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="关于pytorch中数据读取介绍">
+                        
+                        <span class="card-title">关于pytorch中数据读取介绍</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/Daffofily.github.io/categories/pytorch/" class="post-category">
+                                    pytorch
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/Daffofily.github.io/tags/DataLoader%E7%B1%BB/">
+                        <span class="chip bg-color">DataLoader类</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/Daffofily.github.io/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/Daffofily.github.io/libs/prism/prism.min.js"></script>
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/Daffofily.github.io/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/Daffofily.github.io/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/Daffofily.github.io/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/Daffofily.github.io/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/Daffofily.github.io/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/Daffofily.github.io/libs/aplayer/APlayer.min.js"></script>
+<script src="/Daffofily.github.io/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2023</span>
+            
+            <a href="/Daffofily.github.io/about" target="_blank">Kenn Won</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Daffodily" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:Kennwon911@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2832762297" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2832762297" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/Daffofily.github.io/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/Daffofily.github.io/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/Daffofily.github.io/libs/materialize/materialize.min.js"></script>
+    <script src="/Daffofily.github.io/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/Daffofily.github.io/libs/aos/aos.js"></script>
+    <script src="/Daffofily.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/Daffofily.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/Daffofily.github.io/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/Daffofily.github.io/libs/others/snow.js"><\/script>');
+            }
+        </script>
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/Daffofily.github.io/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/Daffofily.github.io/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/Daffofily.github.io/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
