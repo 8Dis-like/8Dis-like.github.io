@@ -574,7 +574,7 @@ header .go-back i {
 }
 
 .bg-cover .title {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.2em;
     margin-bottom: 20px;
     position: relative;
@@ -587,7 +587,7 @@ header .go-back i {
     color: #eee;
 }
 
-.bg-cover .post-title {
+.bg-cover .post- {
     margin: 0 auto;
     font-size: 2.5rem;
     font-weight: 400;
@@ -699,7 +699,7 @@ header .go-back i {
     margin-bottom: 40px;
 }
 
-.dream .title,
+.dream .title,f
 .music-player .title,
 .video-player .title {
     margin-bottom: 20px;
