@@ -309,6 +309,19 @@
 </header>
 
     
+<script src="/Daffofily.github.io/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('此文章为私密内容，请输入密码以获取查阅权限哦！')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/Daffofily.github.io/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -371,12 +384,32 @@
                 
 
                 
-
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-07-19
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.7k
+                </div>
+                
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    10 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -418,7 +451,7 @@
 <h3 id="3-3-自动连接"><a href="#3-3-自动连接" class="headerlink" title="3.3. 自动连接"></a>3.3. 自动连接</h3><p>语法说明: Markdown支持自动将网址和电子邮箱地址转换为连接,只需要将其用&lt;&gt;包起来<br>代码:</p>
 <pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">&lt;https://www.csdn.net>
 &lt;2832762297@qq.com><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>显示效果:<br><a target="_blank" rel="noopener" href="https://www.csdn.net/">https://www.csdn.net</a><br><a href="mailto:&#50;&#56;&#x33;&#50;&#x37;&#x36;&#x32;&#x32;&#x39;&#x37;&#64;&#x71;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#50;&#56;&#x33;&#50;&#x37;&#x36;&#x32;&#x32;&#x39;&#x37;&#64;&#x71;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+<p>显示效果:<br><a target="_blank" rel="noopener" href="https://www.csdn.net/">https://www.csdn.net</a><br><a href="mailto:&#x32;&#56;&#x33;&#50;&#x37;&#x36;&#50;&#50;&#x39;&#x37;&#64;&#x71;&#x71;&#46;&#99;&#111;&#x6d;">&#x32;&#56;&#x33;&#50;&#x37;&#x36;&#50;&#50;&#x39;&#x37;&#64;&#x71;&#x71;&#46;&#99;&#111;&#x6d;</a></p>
 <h2 id="4-锚点"><a href="#4-锚点" class="headerlink" title="4. 锚点"></a>4. 锚点</h2><p>锚点其实是页内超链接，可以跳转到本页面的某个位置。</p>
 <p>语法：<br>在需要跳转的地方后面写上(#标记)，在需要跳转到的地方后面写上</p>
 <p>代码：</p>
@@ -726,7 +759,7 @@ void main()&#123;
 <div id="article-share">
 
     
-    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <div class="social-share" data-sites="twitter,google,qq,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
     <script src="/Daffofily.github.io/libs/share/js/social-share.min.js"></script>
     
 

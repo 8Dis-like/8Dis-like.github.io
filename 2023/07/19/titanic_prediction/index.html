@@ -312,6 +312,19 @@ import seaborn ">
 </header>
 
     
+<script src="/Daffofily.github.io/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('此文章为私密内容，请输入密码以获取查阅权限哦！')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/Daffofily.github.io/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -374,12 +387,32 @@ import seaborn ">
                 
 
                 
-
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-07-19
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4.6k
+                </div>
+                
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    26 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -2933,7 +2966,7 @@ acc_gaussian<span aria-hidden="true" class="line-numbers-rows"><span></span><spa
 <div id="article-share">
 
     
-    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <div class="social-share" data-sites="twitter,google,qq,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
     <script src="/Daffofily.github.io/libs/share/js/social-share.min.js"></script>
     
 
@@ -3284,7 +3317,7 @@ acc_gaussian<span aria-hidden="true" class="line-numbers-rows"><span></span><spa
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Here's something encrypted, password is required to continue reading.
+                            
                         
                     </div>
                     <div class="publish-info">
