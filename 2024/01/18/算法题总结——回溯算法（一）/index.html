@@ -4,24 +4,18 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="正则表达式, 归去来兮">
-    <meta name="description" content="正则表达式
-含义：正则表达式本质上就是字符串，它是通过规定的特殊字符来代替我们平时的复杂的字符串，我们可以用它来进行查找、替换等操作，在效率上有很大的提高。
+    <meta name="keywords" content="算法题总结回溯算法（一）, 归去来兮">
+    <meta name="description" content="1.  回溯法  回溯是一种搜索方式，本质是穷举。使用回溯法解题有以下三个要素要明晰：
 
-常用的正则表达式操作符
+回溯函数的参数及返回值
 
+回溯函数的终止条件
 
-
-操作符
-说明
-示例
+单层循环所要执行的操作
+这里附上此三个步骤的伪代码加深理解：
 
 
-
-.
-表示任何单个字符
-
-">
+void backtracking(">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -33,7 +27,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>正则表达式 | 归去来兮</title>
+    <title>算法题总结回溯算法（一） | 归去来兮</title>
     <link rel="icon" type="image/png" href="/Daffofily.github.io/medias/webicon.png">
     
 
@@ -341,12 +335,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Daffofily.github.io/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/Daffofily.github.io/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">正则表达式</h1>
+                    <h1 class="description center-align post-title">算法题总结回溯算法（一）</h1>
                 </div>
             </div>
         </div>
@@ -370,8 +364,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/Daffofily.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
-                                <span class="chip bg-color">正则表达式</span>
+                            <a href="/Daffofily.github.io/tags/%E5%9B%9E%E6%BA%AF/">
+                                <span class="chip bg-color">回溯</span>
                             </a>
                         
                     </div>
@@ -382,8 +376,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/Daffofily.github.io/categories/coding%E5%B0%8F%E6%8A%80%E8%83%BD/" class="post-category">
-                                coding小技能
+                            <a href="/Daffofily.github.io/categories/%E7%AE%97%E6%B3%95%E9%A2%98%E6%80%BB%E7%BB%93/" class="post-category">
+                                算法题总结
                             </a>
                         
                     </div>
@@ -395,28 +389,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-10-10
+                    2024-01-18
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-07-19
+                    2024-01-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    327
+                    3.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    13 分
                 </div>
                 
 
@@ -439,91 +433,268 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><ol>
-<li><p>含义：正则表达式本质上就是字符串，它是通过规定的特殊字符来代替我们平时的复杂的字符串，我们可以用它来进行查找、替换等操作，在效率上有很大的提高。</p>
+                <h3 id="1-回溯法"><a href="#1-回溯法" class="headerlink" title="1.  回溯法"></a>1.  回溯法</h3><p>  回溯是一种搜索方式，本质是穷举。使用回溯法解题有以下三个要素要明晰：</p>
+<ul>
+<li><p>回溯函数的参数及返回值</p>
 </li>
-<li><p>常用的正则表达式操作符</p>
-<table>
-<thead>
-<tr>
-<th align="left">操作符</th>
-<th>说明</th>
-<th>示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">.</td>
-<td>表示任何单个字符</td>
-<td></td>
-</tr>
-<tr>
-<td align="left">[ ]</td>
-<td>字符集,对单个字符给出取值范围</td>
-<td>[abc]表示a、b、c, [a-z]表示a到z单个字符</td>
-</tr>
-<tr>
-<td align="left">[^ ]</td>
-<td>非字符集，对单个字符给出排除范围</td>
-<td>[^abc]表示非a非b非c的单个字符</td>
-</tr>
-<tr>
-<td align="left">*</td>
-<td>前一个字符一个或无限次扩展</td>
-<td>abc*表示ab、abc、abcc等</td>
-</tr>
-<tr>
-<td align="left">+</td>
-<td>前一个字符一次或无限次的扩展</td>
-<td>abc+表示abc、abcc、abccc等</td>
-</tr>
-<tr>
-<td align="left">?</td>
-<td>前一个字符零次或一次扩展</td>
-<td>abc表示ab、abc</td>
-</tr>
-<tr>
-<td align="left">|</td>
-<td>左右表达式任意一个</td>
-<td>abc|def表示abc或edf</td>
-</tr>
-<tr>
-<td align="left">{m}</td>
-<td>扩展前一个字符m次</td>
-<td>ab{2}c表示abbc</td>
-</tr>
-<tr>
-<td align="left">{m, n}</td>
-<td>扩展前一个字符m至n次</td>
-<td>ab{1,2}c表示abc、abbc</td>
-</tr>
-<tr>
-<td align="left">^</td>
-<td>匹配字符串开头</td>
-<td>^abc表示abc在一个字符串的开头</td>
-</tr>
-<tr>
-<td align="left">$</td>
-<td>匹配字符串结尾</td>
-<td>abc$表示abc在一个字符串的结尾</td>
-</tr>
-<tr>
-<td align="left">()</td>
-<td>分组标记，内部只能使用</td>
-<td>操作符</td>
-</tr>
-<tr>
-<td align="left">\d</td>
-<td>数字表示，[0-9]</td>
-<td></td>
-</tr>
-<tr>
-<td align="left">\w</td>
-<td>单词字符，[A-Za-z0-9_ ]</td>
-<td></td>
-</tr>
-</tbody></table>
+<li><p>回溯函数的终止条件</p>
+</li>
+<li><p>单层循环所要执行的操作</p>
+<p>这里附上此三个步骤的伪代码加深理解：</p>
+</li>
+</ul>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">void backtracking(参数) &#123;
+    if (终止条件) &#123;
+        存放结果;
+        return;
+    &#125;
+
+    for (选择：本层集合中元素（树中节点孩子的数量就是集合的大小）) &#123;
+        处理节点;
+        backtracking(路径，选择列表); &#x2F;&#x2F; 递归
+        回溯，撤销处理结果
+    &#125;
+&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>下面的解题思路基本按照此三个步骤展开。</p>
+<h3 id="2-题目列表"><a href="#2-题目列表" class="headerlink" title="2. 题目列表"></a>2. 题目列表</h3><h4 id="2-1-组合问题"><a href="#2-1-组合问题" class="headerlink" title="2.1.  组合问题"></a>2.1.  组合问题</h4><p>给定两个整数 n 和 k，返回 1 … n 中所有可能的 k 个数的组合。</p>
+<p>示例: 输入: n &#x3D; 4, k &#x3D; 2 输出: [ [2,4], [3,4], [2,3], [1,2], [1,3], [1,4], ]</p>
+<p>这道题可以直接用两层签到循环解决，但是如果k&#x3D;100那就要写100层嵌套循环，这显然不可能，所以考虑使用回溯法，回溯的本质还是循环遍历。</p>
+<ol>
+<li><p>参数部分，题干明显给出两个参数，这是不可缺少的。另外在回溯算法中，因为每次的回溯都是从上一次开始，所以一般都会有一个记录循环开始位置的startindex作为参数。</p>
+</li>
+<li><p>终止条件就是得到的每个结果中的数字个数等于要求的k。</p>
+</li>
+<li><p>单层循环内容是把每次遍历得到的数组加入结果中，知道达到循环终止条件，存储结果。</p>
 </li>
 </ol>
+<p>以下是回溯的具体代码，结合具体代码再来看这个回溯过程。</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">vector&lt;vector&lt;int&gt;&gt; results; &#x2F;&#x2F; 存放符合条件结果的集合
+vector&lt;int&gt; path; &#x2F;&#x2F; 用来存放符合条件结果
+void backtracking(int n, int k, int startindex)&#123;
+    if(path.size() &#x3D;&#x3D; k)&#123;
+        result.push_back(path);
+        return;
+    &#125;
+    for(int i &#x3D; startindex; i &lt; n; i++)&#123;
+        path.push_back(i+1);
+        backtracking(n, k, i+1);
+        path.pop_back();
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>整个回溯过程首先从startindex&#x3D;0开始，首先第一次进入循环，i&#x3D;0，执行循环内代码：存储第一个遍历到的值，当执行到循环内的backtracking函数时，便开始了递归。第一次递归传入的startindex&#x3D;1，那么接下来便会存储第二个遍历到的值，然后再次进入递归。再次进入递归后发现path中已经存储了两个数了，所以此次回溯结束。下面再进入的时第一次递归后传入的startindex&#x3D;1的下一步，也就是startindex&#x3D;2，以此类推，直至startindex&#x3D;4，第一次递归才算结束。然后i&#x3D;1，重复刚才的过程。</p>
+<p>另外回溯函数后，还将刚加入结果的pop了。这里的pop其实是当我们找到一个合适的结果后，并且将其存储后，再依次把path中的值删除，供下一循环重新使用。</p>
+<p>从上面过程可以看出，回溯是先往深处遍历，满足条件后结束，并跳转至最近的递归层。for循环其实是每层中每个节点处开始横向遍历的过程，而嵌套则是层数深入的过程,整个结构与树的结构类似。</p>
+<h4 id="2-2-组合求和（一）"><a href="#2-2-组合求和（一）" class="headerlink" title="2.2. 组合求和（一）"></a>2.2. 组合求和（一）</h4><p>找出所有相加之和为 n 的 k 个数的组合。组合中只允许含有 1 - 9 的正整数，并且每种组合中不存在重复的数字。<br>示例 1: 输入: k &#x3D; 3, n &#x3D; 7 输出: [[1,2,4]]<br>说明：</p>
+<ul>
+<li>所有数字都是正整数。</li>
+<li>解集不能包含重复的组合。</li>
+</ul>
+<p>这题与上一道题相似，上题是任意组合，本题要求和为n。这里还是考虑三个要素：</p>
+<ol>
+<li>回溯函数的参数：n和k，还有startindex，这里是求和，最好是在传入一个参数sum，每遍历到一个数就相加并判断是否符合条件。</li>
+<li>终止条件是结果中的数字个数等于k，并且此时sum为n。</li>
+<li>单层循环内执行的是sum加上此次遍历得到的数。</li>
+</ol>
+<p>根据以上分析可以写出以下回溯代码</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">vector&lt;vector&lt;int&gt;&gt; results; &#x2F;&#x2F; 存放符合条件结果的集合
+vector&lt;int&gt; path; &#x2F;&#x2F; 用来存放符合条件结果
+void backtracking(int n, int k, int startindex,int sum)&#123;
+	if (sum &gt; targetSum) &#123; &#x2F;&#x2F; 剪枝操作
+        return; 
+    &#125;
+    if(path.size() &#x3D;&#x3D; k &amp;&amp; sum &#x3D;&#x3D; n)&#123;
+        result.push_back(path);
+        return;
+    &#125;
+    for(int i &#x3D; startindex; i &lt;&#x3D; ; i++)&#123;
+        path.push_back(i);
+        sum +&#x3D; i;
+        backtracking(n, k, i+1, sum);
+        path.pop_back();
+        sum -&#x3D; i;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="2-3-组合求和（二）"><a href="#2-3-组合求和（二）" class="headerlink" title="2.3. 组合求和（二）"></a>2.3. 组合求和（二）</h4><p>给定一个无重复元素的数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。candidates 中的数字可以无限制重复被选取。</p>
+<p>说明：<br>所有数字（包括 target）都是正整数。<br>解集不能包含重复的组合。</p>
+<p>示例：<br>输入：candidates &#x3D; [2,3,6,7], target &#x3D; 7  输出： [ [7], [2,2,3] ]</p>
+<p>本题条件限制增加，但还是先考虑三要素，再讨论细节。</p>
+<ol>
+<li>回溯函数的参数：预选数组candidates和求和目标数target，同样还有startindex和sum。</li>
+<li>终止条件是sum&#x3D;target。</li>
+<li>单层循环内执行的是sum加上此次遍历得到的数。</li>
+</ol>
+<p>此题明确说明数字可以重复使用，如果按照上面的思路，选取一个数后便从其下一个数继续回溯，那就没有考虑到重复选取，所以此处回溯的startindex不能再使用i+1，而应该是i。</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">vector&lt;vector&lt;int&gt;&gt; results; &#x2F;&#x2F; 存放符合条件结果的集合
+vector&lt;int&gt; path; &#x2F;&#x2F; 用来存放符合条件结果
+void backtracking(vector&lt;int&gt; candidates, int target, int startindex,int sum)&#123;
+	if( sum &#x3D;&#x3D; target)&#123;
+           result.push_back(path);
+           return;
+	&#125;
+	for(int i &#x3D; startindex; i &lt; candidates.size(); i++)&#123;
+           path.push_back(i);
+           sum +&#x3D; i;
+           backtracking(n, target, i, sum);
+           path.pop_back();
+           sum -&#x3D; i;
+	&#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="2-4-组合求和（三）"><a href="#2-4-组合求和（三）" class="headerlink" title="2.4. 组合求和（三）"></a>2.4. 组合求和（三）</h4><p>给定一个数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。candidates 中的每个数字在每个组合中只能使用一次。</p>
+<p>说明： 所有数字（包括目标数）都是正整数。解集不能包含重复的组合。</p>
+<p>输入: candidates &#x3D; [10,1,2,7,6,1,5], target &#x3D; 8,<br>所求解集为: [[1, 7],[1, 2, 5],[2, 6],[1, 1, 6]]</p>
+<p>此题相较上题又有变化，这里没有限制所给数组无重复元素，但同时限制解集不能有重复组合。</p>
+<p>这里的三要素其实与上面的是一样的，不同的是数组有重复元素，但结果不能有重复，那么遍历过程肯定需要有调整。</p>
+<p>我们研究遍历细节，假如所给数组为[1，1，2，3],target为3第一层就会取到两次1，第一次取1后，随着层数深入，后续会取到2，这就是一个正确的结果。而第二次取1后，后续还会取到2，这样就会由于重复元素出现重复结果。要避免这种情况，那么就要保证同层中第一次取1后，就不再取第二个1。</p>
+<p>要想实现上面的筛选，首先要对数组进行排序，再执行回溯前判断是否有相同的元素并且第一个已被使用的情况，若有则执行continue，修改代码如下：</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">vector&lt;int&gt; path;
+   vector&lt;vector&lt;int&gt;&gt; results;
+   void backtracking2(vector&lt;int&gt; candidates, int target, int sum, int startIndex)
+   &#123;
+       if (sum &#x3D;&#x3D; target)
+       &#123;
+           results.push_back(path);
+           return;
+       &#125;
+       for (int i &#x3D; startIndex; i &lt; candidates.size() &amp;&amp; sum + candidates[i] &lt;&#x3D; target; i++)
+       &#123;
+           if (i &gt; startIndex &amp;&amp; candidates[i] &#x3D;&#x3D; candidates[i - 1])
+           &#123;
+               continue;
+           &#125;
+           sum +&#x3D; candidates[i];
+           path.push_back(candidates[i]);
+           backtracking2(candidates, target, sum, i + 1);
+           sum -&#x3D; candidates[i];
+           path.pop_back();
+       &#125;
+   &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="2-5-电话号码组合"><a href="#2-5-电话号码组合" class="headerlink" title="2.5. 电话号码组合"></a>2.5. 电话号码组合</h4><p>给定一个仅包含数字 2-9 的字符串，返回所有它能表示的字母组合。</p>
+<p>给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。</p>
+<img src="/Daffofily.github.io/2024/01/18/%E7%AE%97%E6%B3%95%E9%A2%98%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%80%EF%BC%89/phonecomb.png" alt="电话按键" width="300">
+
+<p>示例:<br>输入：”23”<br>输出：[“ad”, “ae”, “af”, “bd”, “be”, “bf”, “cd”, “ce”, “cf”].</p>
+<p>首先看三要素：</p>
+<ol>
+<li>回溯函数的参数：所给的字符串，以及startindex。</li>
+<li>终止条件是结果的大小等于所给字符串的大小。</li>
+<li>单层循环内执行的是遍历每个数字所对应的字母，并且添加到结果中。</li>
+</ol>
+<p>单层循环所执行的内容具体来说：首先找到对应的数字存储起来（由于给的是字符串数字，所以要把类型转为int型），然后找到这个数字对应的字母字符串，然后遍历字符串，存储结果。</p>
+<p>这里需要注意的是，在执行横向遍历时，我们遍历的是每个数字对应的字母组合。纵向遍历也就是层数深入才是切换下一个数字，所以循环中的i是从0开始，而不是从startindex开始。下面是主要思路的代码：</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">vector&lt;int&gt; path;
+   vector&lt;vector&lt;int&gt;&gt; results;
+void backtracking(string &amp;digits, int startindex)&#123;
+	if(path.size() &#x3D;&#x3D; digits.size())&#123;
+		results.push_back(path);
+		return;
+	&#125;
+	int digit &#x3D; digits[startindex] - &#39;0&#39;;
+	string letters &#x3D; lettermap[digit];
+	for(int i &#x3D; 0; i &lt; letters.size(); i++)&#123;
+		path.push_back(letters[i]);
+		backtracking(digits, startindex+1);
+		path.pop_back();
+	&#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="2-6-切割回文串"><a href="#2-6-切割回文串" class="headerlink" title="2.6.  切割回文串"></a>2.6.  切割回文串</h4><p>给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。</p>
+<p>返回 s 所有可能的分割方案。</p>
+<p>示例: 输入: “aab” 输出: [ [“aa”,”b”], [“a”,”a”,”b”] ]</p>
+<p>三要素：</p>
+<ol>
+<li>回溯函数的参数：所给的字符串，以及startindex。</li>
+<li>终止条件是startindex大于或等于字符串的长度。</li>
+<li>单层循环内执行的是从startindex开始，往后依次选取字符串，并判断是否为回文串。</li>
+</ol>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">bool IsPalindrome(string &amp;input);
+void backtracking(string &amp;input, int startindex)&#123;
+	if(startindex &gt;&#x3D; input.size())&#123;
+		result.push_back();
+		return;
+	&#125;
+	for(int i &#x3D; startindex; i &lt; input.size();i++)&#123;
+		if(IsPalindrome(input, startindex, i))&#123;
+			string str &#x3D; input.substr(startindex, i - startindex + 	1);
+			path.push_back(str);
+			backtracking(input, i + 1);
+			path.pop_back();
+		&#125;else&#123;
+			continue;
+		&#125;
+	&#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>难点在于理解切割的过程并抽象为回溯算法来解决，也就是利用单层循环中startindex和i依次选取字符串进行回文判断，并存储结果。如果把回溯问题看作树结构，从横向和纵向的遍历理解清楚，或许更容易找到单词循环需要做什么，从而找到解决问题的思路。</p>
+<p>另外，判断回文时，下面代码中有两种方法，对比前者更慢，后者更快，也就是说c++库函数的执行效率有时会更慢，如果对执行效率等有要求时，需要谨慎使用库函数。</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">bool IsPalindrome(string &amp;s)
+&#123;
+
+    &#x2F;&#x2F; string revstr &#x3D; s;
+    &#x2F;&#x2F; reverse(s.begin(), s.end());
+    &#x2F;&#x2F; return !s.compare(revstr);
+
+    for (int i &#x3D; 0, j &#x3D; s.size() - 1; i &lt; j; i++, j--)
+    &#123;
+        if (s[i] !&#x3D; s[j])
+        &#123;
+            return false;
+        &#125;
+    &#125;
+    return true;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="2-7-分割IP地址"><a href="#2-7-分割IP地址" class="headerlink" title="2.7. 分割IP地址"></a>2.7. 分割IP地址</h4><p>给定一个只包含数字的字符串，复原它并返回所有可能的 IP 地址格式。</p>
+<p>有效的 IP 地址 正好由四个整数（每个整数位于 0 到 255 之间组成，且不能含有前导 0），整数之间用 ‘.’ 分隔。</p>
+<p>示例 1：<br>输入：s &#x3D; “25525511135”<br>输出：[“255.255.11.135”,”255.255.111.35”]</p>
+<p>观察输出，其实相比于输入就是通过”.”进行了分割，所以本题可以理解为在所给字符串中插入三个”.”，使得生成的新字符串符合IP地址的格式。</p>
+<p>三要素：</p>
+<ol>
+<li>回溯参数：输入字符串，startindex，以及记录已经插入的点数dotnum</li>
+<li>终止条件：当已经插入三个点时，第四段就被分割好了，故终止为插入第三个点。</li>
+<li>单层执行内容：遍历数组，并且判断所取数段是否符合IP地址要求，符合则在该数后插入点。</li>
+</ol>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">void backtracking(string &amp;digits, int startindex, int dotnum)&#123;
+	if(dotnum &#x3D;&#x3D; 3)&#123;
+		if(IsVaild(digits, startindex, digits.size() - 1))&#123;
+			result.push_back(path);
+		&#125;
+		return;
+	&#125;
+	for(int i &#x3D; startindex; i &lt; digits.size(); i++)&#123;
+		if(Isvalid(digits, startindex, i))&#123;
+			digits.insert(digits.begin() + i + 1, &#39;.&#39;);
+			dotnum++;
+			backtracking(digits, i + 2, dotnum);
+			digits.erase(digits.begin() + i + 1);
+		&#125;else&#123;
+			break;
+		&#125;
+	&#125;
+&#125;
+bool IsValid(string &amp;str, int begin, int end)&#123;
+	if( end &lt; begin || end - begin &gt;&#x3D; 3)&#123;
+		return false;
+	&#125;
+	if(str[begin] &#x3D;&#x3D; &#39;0&#39; &amp;&amp; start !&#x3D; end)&#123;
+		return false;
+	&#125;
+	int num &#x3D; 0;
+	for(int i &#x3D; begin; i &lt;&#x3D; end; i++)&#123;
+		num &#x3D; num*10 +(str[begin] - &#39;0&#39;);
+		if(num &gt; 255)&#123;
+			return false;
+		&#125;
+	&#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>本题的难点在于明晰点的位置选取的遍历过程，进而截取IP段并判断是否合法。同样可以将其抽象为树形结构，纵向遍历相当于提供截取位置，横向遍历就是随着i的移动截取[startindex，i]中的多个数字。</p>
+<p>另外之前的回溯中不合法情况都是continue，但这里却是break，因为一旦截取[startindex,i]不合法，那么i在往后移动也一定不合法，所以直接跳出循环，而不是仅仅不执行此次循环。</p>
 
                 
             </div>
@@ -550,7 +721,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://youtsite.com/Daffofily.github.io/2022/10/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">https://youtsite.com/Daffofily.github.io/2022/10/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</a>
+                    <a href="https://youtsite.com/Daffofily.github.io/2024/01/18/%E7%AE%97%E6%B3%95%E9%A2%98%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%80%EF%BC%89/">https://youtsite.com/Daffofily.github.io/2024/01/18/%E7%AE%97%E6%B3%95%E9%A2%98%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%80%EF%BC%89/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -588,8 +759,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/Daffofily.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
-                                    <span class="chip bg-color">正则表达式</span>
+                                <a href="/Daffofily.github.io/tags/%E5%9B%9E%E6%BA%AF/">
+                                    <span class="chip bg-color">回溯</span>
                                 </a>
                             
                         </div>
@@ -935,66 +1106,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/Daffofily.github.io/2022/10/10/%E5%85%B3%E4%BA%8Epytorch%E4%B8%ADDataLoader%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D/">
+                <a href="/Daffofily.github.io/2024/01/18/%E7%AE%97%E6%B3%95%E9%A2%98%E6%80%BB%E7%BB%93%E2%80%94%E2%80%94%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%80%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/Daffofily.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="关于pytorch中数据读取介绍">
+                        <img src="/Daffofily.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="算法题总结回溯算法（一）">
                         
-                        <span class="card-title">关于pytorch中数据读取介绍</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-10-10
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/Daffofily.github.io/categories/pytorch/" class="post-category">
-                                    pytorch
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/Daffofily.github.io/tags/DataLoader%E7%B1%BB/">
-                        <span class="chip bg-color">DataLoader类</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/Daffofily.github.io/2022/10/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/Daffofily.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="正则表达式">
-                        
-                        <span class="card-title">正则表达式</span>
+                        <span class="card-title">算法题总结回溯算法（一）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1005,14 +1128,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/Daffofily.github.io/categories/coding%E5%B0%8F%E6%8A%80%E8%83%BD/" class="post-category">
-                                    coding小技能
+                            <a href="/Daffofily.github.io/categories/%E7%AE%97%E6%B3%95%E9%A2%98%E6%80%BB%E7%BB%93/" class="post-category">
+                                    算法题总结
                                 </a>
                             
                             
@@ -1023,8 +1146,57 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Daffofily.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
-                        <span class="chip bg-color">正则表达式</span>
+                    <a href="/Daffofily.github.io/tags/%E5%9B%9E%E6%BA%AF/">
+                        <span class="chip bg-color">回溯</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/Daffofily.github.io/2023/10/11/cs231n-assignment1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/Daffofily.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="cs231n-assignment1学习笔记">
+                        
+                        <span class="card-title">cs231n-assignment1学习笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/Daffofily.github.io/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    课程笔记
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/Daffofily.github.io/tags/cs231n/">
+                        <span class="chip bg-color">cs231n</span>
                     </a>
                     
                 </div>

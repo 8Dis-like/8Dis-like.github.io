@@ -314,7 +314,7 @@
     (function() {
         let pwd = 'a8cb1254b7f7a6c6b395fa79dc5e12a11ffd8a2ee2b3b6a8912fce72037307ab';
         if (pwd && pwd.length > 0) {
-            if (pwd !== CryptoJS.SHA256(prompt('此文章为私密内容，请输入密码以获取查阅权限哦！')).toString(CryptoJS.enc.Hex)) {
+            if (pwd !== CryptoJS.SHA256(prompt('此文章为私密内容，请输入密码以获取查阅权限！')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
                 location.href = '/Daffofily.github.io/';
             }
@@ -1121,7 +1121,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2023</span>
+                <span id="year">2019-2024</span>
             
             <a href="/Daffofily.github.io/about" target="_blank">Kenn Won</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
