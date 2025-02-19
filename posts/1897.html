@@ -467,7 +467,7 @@ message_filters<span class="token double-colon punctuation">::</span>Subscriber<
 <h3 id="算法实时运行测试与结果"><a href="#算法实时运行测试与结果" class="headerlink" title="算法实时运行测试与结果"></a>算法实时运行测试与结果</h3><p>​	在上述准备工作全部完成后，便可正式开启双目T265实时运行ORBSLAM步骤，具体则为在ORBSLAM2算法文件夹下输入以下三行命令：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">roscore
 rosrunORB_SLAM2 Stereo Vocabulary/ORBvoc.txt Examples/Stereo/RST265.yaml <span class="token boolean">false</span>
-roslaunch realcamera rs_t265.launch<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+roslaunch realsense2_camera rs_t265.launch<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>​	以下为本机运行结果：<img src="/./../images/1739793508882-5.png" alt="运行结果演示"></p>
 <p>​	准备一个假期、花费一个上午，终于折腾完毕，本人和电池都从满电干到了报警，，，好在，航模电池进入楼下安全箱充电，我也可以进入校门口赖冬梅充电~</p>
