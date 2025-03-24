@@ -386,7 +386,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2025-03-22
+                    2025-03-24
                 </div>
                 
 
@@ -455,7 +455,7 @@ cv<span class="token double-colon punctuation">::</span>Mat depth <span class="t
 <p>最后一步，沉下心来复习C++语言规范（现在有类Cursor等AI工具非常方便），对照代码校正自身理解，必要时绘制类似UML的工具图，不必严格规范，足够条分缕析有效帮助理解即可，本人手工绘制的如下图（整体预览效果即可，不必深入细节，个人偏好不一定规范）。</p>
 <p><img src="/./../images/image-20250321193922874.png" alt="手绘部分ORBSLAM3源码结构"></p>
 <p>​	对照着上方手工绘图，就如图战场上有了地图，得以精确锁定打击目标。具体对ROS功能包中ros_stereo.cc补充一个方法以发布从TrackStereo返回的Sophus库SE3f标准格式数据Tcw即可。</p>
-<p>发布相关修改如下，详见<a target="_blank" rel="noopener" href="https://github.com/8Dis-like/ORB_SLAM3/tree/master">github完整版</a></p>
+<p>发布相关修改如下，详见<a target="_blank" rel="noopener" href="https://github.com/8Dis-like/ORB_SLAM3/tree/master">github完整版</a>，想要进一步了解算法跟踪具体流程可参考<a target="_blank" rel="noopener" href="https://zhaoxuhui.top/blog/2021/12/27/orb-slam3-note-9-stereo-tracking.html">这篇博客</a></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token class-name">ImageGrabber</span><span class="token double-colon punctuation">::</span><span class="token function">GrabStereo</span><span class="token punctuation">(</span><span class="token keyword">const</span> sensor_msgs<span class="token double-colon punctuation">::</span>ImageConstPtr<span class="token operator">&amp;</span> msgLeft<span class="token punctuation">,</span><span class="token keyword">const</span> sensor_msgs<span class="token double-colon punctuation">::</span>ImageConstPtr<span class="token operator">&amp;</span> msgRight<span class="token punctuation">)</span>
 <span class="token punctuation">&#123;</span>
     Sophus<span class="token double-colon punctuation">::</span>SE3f Tcw<span class="token punctuation">;</span>
@@ -566,7 +566,7 @@ rosrun dense_reconstruction point_cloud_saver<span aria-hidden="true" class="lin
 <p>​	最终绘制得到三维稠密点云地图如下。</p>
 <p><img src="/./../images/image-20250321201632456.png" alt="稠密点云地图"></p>
 <p>​	当然，由于EuRoC数据集本身轻量级方便调试的特性，数据量相对不足导致所建点云地图也不够丰富。有兴趣的读者可以自行下载与加工<a target="_blank" rel="noopener" href="https://www.cvlibs.net/datasets/kitti/index.php">KITTI数据集</a>或自行采集数据进行测试。</p>
-<p>​	实机运行只需参考前一篇博客“阿木P450双目T265运行ORBSLAM”调整图像来源即可。</p>
+<p>​	实机运行只需参考<a href="https://8dis-like.github.io/posts/1897.html">前一篇博客“阿木P450双目T265运行ORBSLAM”</a>调整图像来源即可。</p>
 <p>​	至此，毕业设计课题实验部分告一段落，期待后续实飞！不过除此之外，后续主要精力切换到论文撰写当中。</p>
 
                 
