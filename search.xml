@@ -4,11 +4,38 @@
   
     
     <entry>
+      <title>Agentic AI</title>
+      <link href="/posts/20260510.html"/>
+      <url>/posts/20260510.html</url>
+      
+        <content type="html"><![CDATA[<p>Navigating through a series of AI courses at UCLA and beyond, I throw myself into the 2026 frontier, competing in the market, only to get a more comprehensive scope of the whole AI landscape today. Here I am writing to jot all my hot thoughts down, expecting as a guide to the future.</p><p>Instead of just listing various AI models to cook with from a user’s perspective, as I wrote 1 year ago, this time I would unfold from 3 distinctive perspectives: academia, engineering, and society, to totally deconstruct the AI trend.</p><h3 id="Academia"><a href="#Academia" class="headerlink" title="Academia"></a>Academia</h3><p>Originating from the smart computing machine concept of Alan Turing and inspired by the Information Theory devised by Claude Shannon, researchers from computer science, linguistics, and neural vision rendezvous with serendipity, giving birth to ideas at the intersection. Deducted logically and implemented meticulously on the fast-growing computing power, pioneers championed a paradigm called neural networks during competitions. Striving to break through parameter limits, followers boost the training using ResNet. Reflecting all the methodology in NLP, people design the attention mechanism and implement the Transformer architecture to replace RNN and LSTM predecessors, igniting the revolution marked by ChatGPT. At the same time, striking innovations in CV, such as diffusion and GAN, significantly unleash the imagination of generative models. With all these blocks in hand, we can intentionally permute and optimize for the next phenomena, like Deepseek and OpenClaw. Directed by acute intuition and fair assumptions, researchers pollinate the encoders and decoders to plump the foundation models, verified by redundant benchmarks to lay the ground for further progress. With respect to multi-modality, robotics borrow experiences from LLM and VLM to carve out VLA. However, short of massive data like Wikipedia for zero-shot generalization, hardware AI is starving for the final piece to fit in the world model.</p><p>I have to note that the process doesn’t happen sequentially. Instead, they deeply intervene and overlap in vagueness. Therefore, it’s quite brilliant for academia to open all the thoughts for sharing in symposim, obeying common strict style. But every coin has both sides, all the evolution proceed in a quite slow pace measured by decades, hence the saying “Greatness can’t be planned”.</p><h3 id="Engineering"><a href="#Engineering" class="headerlink" title="Engineering"></a>Engineering</h3><p>Endowed by advanced models with unprecedented capability, engineers try to harness them to improve the productivity. They start from abstract targets, feature rules, clear out cases, and figure out the best parameters by fine-tuning their gadgets. Gemini or Qwen isn’t a single model capable of everything, but a MOE routing tasks to different models. In a sense, models are built to mimic human intelligence. they contain hidden information that’s worthy leveraging on. While the input and output pipeline constraint their strength, it’s the engineers’ duty to uncover it by rolling out intricate structure and rolling on performance metrices. Just mentioning, the summit of engineering is not adding but removing, since the later requires full understanding of all the subsystems and relations, which leads to simplicity beating complexity.</p><p>Proposed by professor <a href="https://x.com/AndrewYNg">Andrew Ng</a>, “agentic” isn’t just another geek word but a new direction of SWE. An agentic Al workflow is a process where an LLM-based app executes multiple steps to complete a task. As models receive and generate tokens, it’s the system that orchestrates the workflow despite depending on the model to analyze the status and knowledge pool, yet. Skeleton inside the classical server client pattern, engineers tailor some agentic design pattern: Reflection &#x2F; Tool Calling &#x2F; Planning &#x2F; Multi-Agentic Workflows. Although engineers make up many words as academia do, it comes down to the explicit results. In fact, engineers develop handful platforms like pytorch and <a href="https://wandb.ai/">weights &amp; bias</a> for researchers to play with, giving back to academia in business elegacy. Besides, engineers have to plumb all the flows and exploit to the impossible at every hierarchy, from tensor to intermediate representation, and to compilation. Moreover, engineers have to take care of “scaling up” issues, which is exponential complex compared to the prototype in labs. This is also the reason why the positions of engineers are much more than the ones of researchers. </p><p>Tired of squeezing the toothpaste, audience is awesome and looking for the next ChatGPT moment. Product managers envision the blueprint and AI Agent thrive henceforth. Chasing the market bonus, engineers coin jargons such as RAG, MCP, RLHL, FLOPS and swiftly embed them into tech background interviews, causing social effect to be tell. </p><h3 id="Society"><a href="#Society" class="headerlink" title="Society"></a>Society</h3><p>AI makes us feel like God. And everyone can inject something personal by channeled storytelling. Brokers brag it as a once in a life-time chance due to FOMO. Governments elevate it as an institutional superiority rivaling others. Influencers mingle with advertisements reap eyes with capital behind. It seems AI could revolutionize the whole society from head to toe. Well, similar to the Cathotic pope in the medieval who monopolizes the authority to interpret religion. The only way to diminish this is to get hands on in the chaos, like the “traitors” who found Protestantism to declare independence. </p><p>As the ongoing OpenAI trial of the century resonates with GNU free software and Apache open source movements, any new-born tech has to endure fierce debate to settle down, during which new norms are set for the new era. Thanks to the dignity of TimBL, initiative of Yahoo, and justice of antitrust, we can afford daily access to Internet. Admittedly, the consensus is of no easy reach, it is the naked will battle that draw the boundary for the weather beaten status quo.</p><p>Resembling how we invent AI, aiming to minimize the loss, people introduce inference and chain of thoughts to hedge the cult. Speculators naively freeze the dynamic society and blindly apply transfer learning. Some cash out a few-shots, others distill the manipulation but fail the essence. Never mind, all the moves feed the agent social network to accelerate its reinforcement learning until certain policy pops up. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 大道行思 </tag>
+            
+            <tag> Mens et Manus </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>时差</title>
       <link href="/posts/20260412.html"/>
       <url>/posts/20260412.html</url>
       
-        <content type="html"><![CDATA[<p>自春节之后，在保证学业不受影响的前提下，持续一个月的线上工作初体验与连续面试均遗憾告败。也好，紧绷的神经终于得到些许舒缓，在此着笔复盘总结经验教训，提炼出下阶段行动的指南。</p><p>或许你会诧异，此篇为何命名为“时差”。倒时差发生在跨国首周，而在美国生活将达八个月的我按理讲也早已习惯当地时间。确如其言，时差虽为客观，但人对时间的体感却颇为主观，繁忙时不显、兴奋时不显、偏偏静默时倒最感切实。With respect to relativity, time isn’t static. It’s intrinsicly mingled with space under certain laws. 下面，我尝试从多个相关视角出发，分享解读近期对时差的体感与反思。</p><h3 id="市场"><a href="#市场" class="headerlink" title="市场"></a>市场</h3><p>For a senior player in the market, one has to fully understand the time difference. The market is sensitive to time. Each side gets in and out at will, expecting others’ reactions and preparing further actions. Any deal happens here based on peer-to-peer matching, not any one-size-fits-all exam. Besides, deals are made by people, and people are subjective on decisions. Everyone moves within their own time zone. The neighboring time zone tends to trigger chemistry. In reverse, “强扭的瓜不甜”。与其用毕业时间锁定找工日期，不妨将市场的匹配过程视作恋爱，成败不能被定义，伟大不能被计划，照面不必躲闪，错过不必遗憾，尊重缘分顺其自然。</p><p>For me, if Bayro’s termination of the agreement was a “Gray Rhino,” then ClockWork’s refusal was a “Black Swan.” As the nominal first company to work for, officially breaking up with Bayro does shake the base I stand on. But its suspicious legality also fades away with the returned OMEN PC. Anyway, the $2053 in RMB properly ends the deal. While both HR and the hiring manager from ClockWork stated verbally about my candidacy during the Google meeting, they regretted and refused just after a weekend, unilaterally, which really disrupted my deep preparation and enthusiasm. That’s it, before reaching the legal deal, everyone in the market is changing their minds continuously, resembling a quantum entity superposition, only collapsing once observed. Therefore, it’s OK to get familiar with what comes, such as CoderPad for Zoox and HackerRank for WeRide, but don’t bet too much on any single one since businessmen can’t be trusted 100%. Never sprint hastily before identifying the finals of the marathon. Otherwise, it takes inner conflict to resurrect a deflated balloon.</p><h3 id="去留"><a href="#去留" class="headerlink" title="去留"></a>去留</h3><p>对于北美留子，说到市场，就离不开另一个高度相关的话题，也是聊天室中房间里的大象——身份。作为研究生才移居美国的00后，一方面挂念着亲朋情根的乡土；另一方面又敬仰着勇闯天地的执念；一方面羡慕着玩世不恭的轻浮，另一方面又惊醒着被社会规训的成熟。豪情与碰壁、自由与认同，矛盾汇聚一处便是高悬于上的The Sword of Damocles——去留。</p><p>Getting rid of the aforementioned subjective biases, and to be fair, it’s a draw for a Chinese background IT worker to consider the pros and cons between the USA and China as bases. While the US offers a more competitive salary at the cost of loneliness, China appears more belonging but unnecessarily complex in communities. In that case, I choose to blur my global motion planning at the moment and focus on the next stage cascadedly.</p><p>Good entrepreneurs don’t assume anything. They obey the pattern of Expectation Maximization, adjusting on the fly and optimizing the KL divergence between models and the real world. </p><p> Basically, I would revive job hunting for 1 month, boosted by both LinkedIn premium and onsite networking, aiming to reach 100 applications. As the final deadline for the UCLA Meng extension comes close, I would gradually resort to some agents as the final cushion. If neither of them could land a job, then try the last defense working as a gig or ICC, until the flame inside fades or a certain emergency happens, calling me back to China. Then I would have no choice but to settle down to make lemonade given lemons. This is a general compass of my short period in the US to act. I have left free space for any kind of hedging on both sides, smoothing out the bucket since life can’t be planned totally. But in general, try for the best, but prepare for the worst.</p><h3 id="活法"><a href="#活法" class="headerlink" title="活法"></a>活法</h3><p>每个时代都有每个时代的课题，其中的人也有不同的困境，相应的也有不同的活法。</p><p>面对壮志难酬，屈原选择死，陶渊明选择退，苏东坡则选择“着力即差 ”。</p><p>面对纵情享乐的社会风气，王阳明选择重建道德价值。首要的是，抛弃学生时代长久以来渗入潜意识的刻板范式，世界不只提供ABCD四个选项，人生也并没有一个显性的排名去gauge。对比可以作为谈资，但不值得动气伤神。 </p><p>穷有穷的活法，富有富的活法。天地一逆旅，我亦是行人。</p><p>而在这个当下，每个人处于自己的时区，尽管彼此有着时差，也不妨碍彼此看见互相携手着共同前进。有人在宏大的风浪中依然梦想着改变世界，有人戴着镣铐却持续摸索着优雅的舞姿，有人贪恋特权又试图伪装得不那么显眼，有人看破一切却依然脉动躯壳去追逐夙愿。</p><p>Joked by the destiny, I low-key exploited Bayro’s OMEN PC, which reliving a 48-hour Aram Mayhem in League of Legends within a disjointed space-time. Thanks to GEEX, I got my closest interactions with RIOT Games panel. Ignited by Hammer Museum, I was immersed in music festival by attending arts party forever for the first time. Accompanied by my loved girlfriend, I enjoyed a series of top-notch movies: 长安的荔枝、Zootopia 2, Avatar 3, Now You Can See 3… Resonating with the right-wing Libertarianism led by Peter Thiel, I choose to joke back to destiny resiliently.</p><p>From a boarder perspective, the productivity today tolerates workforce surplus dwindling as time erodes. And there’s no need to be guilt on not landing a decent job title. In fact, more and more people start doing something of their personal hobbies supported by Internet business models. People don’t prioritize wealth over everything blindly anymore and reflect more on life itself. Apart from war, countries keep investing on hardcore frontier to explore beyond our previous records set by astronauts. In spite of friction, the civilization as a whole keeps progressing, just as the economy keeps growing, as well as the universe keeps expanding.</p>]]></content>
+        <content type="html"><![CDATA[<p>自春节之后，在保证学业不受影响的前提下，持续一个月的线上工作初体验与连续面试均遗憾告败。也好，紧绷的神经终于得到些许舒缓，在此着笔复盘总结经验教训，提炼出下阶段行动的指南。</p><p>或许你会诧异，此篇为何命名为“时差”。倒时差发生在跨国首周，而在美国生活将达八个月的我按理讲也早已习惯当地时间。确如其言，时差虽为客观，但人对时间的体感却颇为主观，繁忙时不显、兴奋时不显、偏偏静默时倒最感切实。微渺的生命节律在宏大的时代叙事面前实在细若游丝。With respect to relativity, time isn’t static. It’s intrinsicly mingled with space under certain laws. 下面，我尝试从多个相关视角出发，分享解读近期对时差的体感与反思。</p><h3 id="市场"><a href="#市场" class="headerlink" title="市场"></a>市场</h3><p>For a senior player in the market, one has to fully understand the time difference. The market is sensitive to time. Each side gets in and out at will, expecting others’ reactions and preparing further actions. Any deal happens here based on peer-to-peer matching, not any one-size-fits-all exam. Besides, deals are made by people, and people are subjective on decisions. Everyone moves within their own time zone. The neighboring time zone tends to trigger chemistry. In reverse, “强扭的瓜不甜”。与其用毕业时间锁定找工日期，不妨将市场的匹配过程视作恋爱，成败不能被定义，伟大不能被计划，照面不必躲闪，错过不必遗憾，尊重缘分顺其自然。</p><p>For me, if Bayro’s termination of the agreement was a “Gray Rhino,” then ClockWork’s refusal was a “Black Swan.” As the nominal first company to work for, officially breaking up with Bayro does shake the base I stand on. But its suspicious legality also fades away with the returned OMEN PC. Anyway, the $2053 in RMB properly ends the deal. While both HR and the hiring manager from ClockWork stated verbally about my candidacy during the Google meeting, they regretted and refused just after a weekend, unilaterally, which really disrupted my deep preparation and enthusiasm. That’s it, before reaching the legal deal, everyone in the market is changing their minds continuously, resembling a quantum entity superposition, only collapsing once observed. Therefore, it’s OK to get familiar with what comes, such as CoderPad for Zoox and HackerRank for WeRide, but don’t bet too much on any single one since businessmen can’t be trusted 100%. Never sprint hastily before identifying the finals of the marathon. Otherwise, it takes inner conflict to resurrect a deflated balloon.</p><h3 id="去留"><a href="#去留" class="headerlink" title="去留"></a>去留</h3><p>对于北美留子，说到市场，就离不开另一个高度相关的话题，也是聊天室中房间里的大象——身份。作为研究生才移居美国的00后，一方面挂念着亲朋情根的乡土；另一方面又敬仰着勇闯天地的执念；一方面羡慕着玩世不恭的轻浮，另一方面又惊醒着被社会规训的成熟。豪情与碰壁、自由与认同，矛盾汇聚一处便是高悬于上的The Sword of Damocles——去留。</p><p>Getting rid of the aforementioned subjective biases, and to be fair, it’s a draw for a Chinese background IT worker to consider the pros and cons between the USA and China as bases. While the US offers a more competitive salary at the cost of loneliness, China appears more belonging but unnecessarily complex in communities. In that case, I choose to blur my global motion planning at the moment and focus on the next stage cascadedly.</p><p>Good entrepreneurs don’t assume anything. They obey the pattern of Expectation Maximization, adjusting on the fly and optimizing the KL divergence between models and the real world. </p><p>Basically, I would revive job hunting for 1 month, boosted by both LinkedIn premium and onsite networking, aiming to reach 100 applications. As the final deadline for the UCLA Meng extension comes close, I would gradually resort to some agents as the next cushion. If neither of them could land a job, then try the last defense working as a gig or ICC, until the flame inside fades or a certain emergency happens, calling me back to China. Then I would have no choice but to settle down to make lemonade given lemons. This is a general compass of my short period in the US to act. I have left free space for any kind of hedging on both sides, smoothing out the bucket since life can’t be planned totally. But in general, try for the best, but prepare for the worst.</p><h3 id="活法"><a href="#活法" class="headerlink" title="活法"></a>活法</h3><p>每个时代都有每个时代的课题，其中的人也有不同的困境，相应的也有不同的活法。</p><p>面对壮志难酬，屈原选择死，陶渊明选择退，苏东坡则选择“着力即差 ”。</p><p>面对纵情享乐的社会风气，王阳明选择重建道德价值。首要的是，抛弃学生时代长久以来渗入潜意识的刻板范式，世界不只提供ABCD四个选项，人生也并没有一个显性的排名去gauge。对比可以作为谈资，但不值得动气伤神。 </p><p>穷有穷的活法，富有富的活法。天地一逆旅，我亦是行人。</p><p>而在这个当下，每个人处于自己的时区，尽管彼此有着时差，也不妨碍彼此看见互相携手着共同前进。有人在宏大的风浪中依然梦想着改变世界，有人戴着镣铐却持续摸索着优雅的舞姿，有人贪恋特权又试图伪装得不那么显眼，有人看破一切却依然脉动躯壳去追逐夙愿。</p><p>Joked by the destiny, I low-key exploited Bayro’s OMEN PC, which reliving a 48-hour Aram Mayhem in League of Legends within a disjointed space-time. Thanks to GEEX, I got my closest interactions with RIOT Games panel. Ignited by Hammer Museum, I was immersed in music festival by attending arts party forever for the first time. Accompanied by my loved girlfriend, I enjoyed a series of top-notch movies: 长安的荔枝、Zootopia 2, Avatar 3, Now You Can See 3… Resonating with the right-wing Libertarianism led by Peter Thiel, I choose to joke back to destiny resiliently.</p><p>From a boarder perspective, the productivity today tolerates workforce surplus dwindling as time erodes. And there’s no need to be guilt on not landing a decent job title. In fact, more and more people start doing something of their personal hobbies supported by Internet business models. People don’t prioritize wealth over everything blindly anymore and reflect more on life itself. Apart from war, countries keep investing on hardcore frontier to explore beyond our previous records set by astronauts. In spite of friction, the civilization as a whole keeps progressing, just as the economy keeps growing, as well as the universe keeps expanding.</p>]]></content>
       
       
       <categories>
@@ -20,9 +47,9 @@
       
         <tags>
             
-            <tag> Mens et Manus </tag>
-            
             <tag> 大道行思 </tag>
+            
+            <tag> Mens et Manus </tag>
             
         </tags>
       
@@ -47,9 +74,9 @@
       
         <tags>
             
-            <tag> Mens et Manus </tag>
-            
             <tag> 大道行思 </tag>
+            
+            <tag> Mens et Manus </tag>
             
         </tags>
       
@@ -74,9 +101,9 @@
       
         <tags>
             
-            <tag> Mens et Manus </tag>
-            
             <tag> 大道行思 </tag>
+            
+            <tag> Mens et Manus </tag>
             
         </tags>
       
@@ -101,9 +128,9 @@
       
         <tags>
             
-            <tag> Mens et Manus </tag>
-            
             <tag> 大道行思 </tag>
+            
+            <tag> Mens et Manus </tag>
             
         </tags>
       
@@ -203,9 +230,9 @@
       
         <tags>
             
-            <tag> Mens et Manus </tag>
-            
             <tag> 大道行思 </tag>
+            
+            <tag> Mens et Manus </tag>
             
         </tags>
       
@@ -355,9 +382,9 @@
       
         <tags>
             
-            <tag> 少年游记 </tag>
-            
             <tag> Mens et Manus </tag>
+            
+            <tag> 少年游记 </tag>
             
         </tags>
       
@@ -482,9 +509,9 @@
       
         <tags>
             
-            <tag> 交往通信 </tag>
-            
             <tag> 大道行思 </tag>
+            
+            <tag> 交往通信 </tag>
             
         </tags>
       
